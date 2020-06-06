@@ -53,3 +53,5 @@ const element = <div>{chilren} </div>
 const element = <div>Hello World</div>
 
 ```
+
+## Validating Props 
