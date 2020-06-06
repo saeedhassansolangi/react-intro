@@ -20,6 +20,7 @@
   // const element  = <div id="container-with-id" {...props} /> 
 
   // we can also override them but we have write this after spread opertor otherwise it will not override this
+  // whatever comes last it is the winner
   const props = {className, children}
   const element  = <div id="container-with-id" {...props} className="non-container" /> 
 

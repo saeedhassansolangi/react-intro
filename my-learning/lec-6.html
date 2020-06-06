@@ -1,0 +1,39 @@
+<body>
+  <div id="root">
+    <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
+  </div>
+  <script type="text/babel">
+
+ // rendering Two Element Side by Side
+
+ // we can do this by below way so we have to use React.Fragmenet OR div to render two element side by side
+  // const root = document.getElementById('root');
+  // const helloElement  = <h1>Hello</h1>
+  // const worldElement  = <h2>World</h2>
+  // ReactDOM.render(helloElement,worldElement,root)
+
+// now rendering side by side headers 
+  // const root = document.getElementById('root');
+  // const helloElement  = <h1>Hello</h1>
+  // const worldElement  = <h2>World</h2>
+  // // const element = React.createElement("div",null,helloElement,worldElement)        // OR
+  // // const element = React.createElement("header",null,helloElement,worldElement)     // OR
+  // const element = React.createElement(React.Fragment,null,helloElement,worldElement) 
+  // ReactDOM.render(element,root)
+
+    // now rendering  mutliple elements side by side 
+  const root = document.getElementById('root');
+  const helloElement  = <h1>Hello</h1>
+  const worldElement  = <h2>World</h2>
+  const saeedParagraph = <p>Hello , Iam Saeed Hassan Solangi From Dadu</p>
+  // const element = React.createElement("div",null,helloElement,worldElement)        // OR
+  // const element = React.createElement("header",null,helloElement,worldElement)     // OR
+  const element = React.createElement(React.Fragment,null,helloElement,worldElement,saeedParagraph) 
+  ReactDOM.render(element,root)
+
+
+ 
+  </script>
+</body>
