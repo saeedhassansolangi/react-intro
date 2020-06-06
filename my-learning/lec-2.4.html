@@ -1,0 +1,21 @@
+<!-- Creatint User Interface with React.createElement() ApI  -->
+
+<body>
+  <div id="root">
+    <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+    <!-- react is used to react Element -->
+    <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+    <!-- reactDom is used to render the react Element on the page -->
+  </div>
+
+  <script type="text/javascript">
+    const root = document.getElementById('root');
+    const element = React.createElement('div',null, [
+        React.createElement("h1", {style:{color:'gray'}} , "Header One From lecture 2.4"),
+        React.createElement("p", {className:"span-paragraph"},
+          React.createElement("span", {style:{color:'blue',id:"1"}}, "Hello World"))]);
+    ReactDOM.render(element, root)
+    console.log(element);
+  </script>
+
+</body>
