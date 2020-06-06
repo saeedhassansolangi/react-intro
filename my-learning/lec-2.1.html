@@ -8,9 +8,41 @@
   </div>
 
     <script type="text/javascript">
-    const root = document.getElementById('root'); 
-    const element = React.createElement('div', {className:"container"},"Hello World From","Saeed Hassan Solangi","From Dadu");
+    // const root = document.getElementById('root'); 
+    // const element = React.createElement('div', {className:"container"},
+
+    // // if we write like this , it will add text in it Or it will add These three texts in Array 
+    // // children: Array(3) [ " Hello World From", " Saeed Hassan Solangi", " From Dadu" ]
+    // " Hello World From",
+    // " Saeed Hassan Solangi",
+    // " From Dadu");
+
+
+    // ReactDOM.render(element,root)
+    // console.log(element);
+
+
+//                    OR 
+// // add array of elements in Children 
+//     const root = document.getElementById('root'); 
+//     const element = React.createElement('div', 
+//     // children: Array(3) [ "Hello World's From ", "Saeed Hassan Solangi ", "From Dadu" ]  //same output
+//     {children:["Hello World's From ","Saeed Hassan Solangi " ,"From Dadu"],
+//      className:"container"});
+//     ReactDOM.render(element,root)
+//     console.log(element);
+
+
+// OR 
+//we Can Write like this 
+ 
+const root = document.getElementById('root'); 
+    const element = React.createElement('div', 
+     {className:"container"},
+    //  children: Array(3) [ "Hello World From Pakistan ", "Saeed Hassan Solangi ", "From Dadu" ]
+     ["Hello World From Pakistan " ,"Saeed Hassan Solangi " , "From Dadu" ]);
     ReactDOM.render(element,root)
     console.log(element);
+   </script>
 
-
+</body>
