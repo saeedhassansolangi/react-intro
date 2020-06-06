@@ -1,0 +1,27 @@
+<body>
+  <div id="root">
+    <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
+  </div>
+  <script type="text/babel">
+  const rootElement = document.getElementById('root');
+
+
+const Elements = props => <div>{props.children}</div>
+
+// we can also pass multiple elements as Well with the Content
+const element =(
+<>
+<Elements >
+Saeed Hassan
+<Elements children="Masood Ahemd " /> 
+<p>Hello Jani <span>Saeed <strong>Hassan</strong> </span> </p> 
+</Elements> 
+
+</>
+)
+
+  ReactDOM.render(element,rootElement)
+  </script>
+</body>

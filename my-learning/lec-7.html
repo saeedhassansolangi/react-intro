@@ -1,0 +1,43 @@
+<body>
+  <div id="root">
+    <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
+  </div>
+  <script type="text/babel">
+  const rootElement = document.getElementById('root');
+  
+  // we dont want to repeat div 
+  // const element =(
+  // <>
+  // <div>Hello World</div>
+  // <div>Hello World</div>
+  // </>
+  // )
+  
+  // now our div is reusable 
+  // const elements = <div>Hello World</div>
+
+  // const element =(
+  // <>
+  // {elements}
+  // {elements}
+  
+  // </>
+  // )
+
+// now if we want to pass value to the elements so we have to create a function and make it reusable 
+const elements = props => <div>{props.name}</div>
+
+const element =(
+<>
+{elements({name:"Saeed Hassan Solangi"}) }
+{elements({name:"Masood Ahmed Magneejo"}) }
+
+</>
+)
+
+
+  ReactDOM.render(element,rootElement)
+  </script>
+</body>

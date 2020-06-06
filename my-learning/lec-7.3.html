@@ -1,0 +1,25 @@
+<body>
+  <div id="root">
+    <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
+  </div>
+  <script type="text/babel">
+  const rootElement = document.getElementById('root');
+
+
+const Elements = props => <div>{props.children}</div>
+
+// These two are Equivalent if we use children as a props OR
+// if we use Content inside of Opening and CLosing tag
+// but first one is recommended and it also looks good
+const element =(
+<>
+<Elements >Saeed Hassan </Elements> 
+<Elements children="Masood Ahemd " /> 
+</>
+)
+
+  ReactDOM.render(element,rootElement)
+  </script>
+</body>
