@@ -1,0 +1,8 @@
+<body>
+  <div id="root">
+    <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+    <!-- react is used to react Element -->
+    <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+    <!-- reactDom is used to render the react Element on the page -->
+  </div>
+</body>

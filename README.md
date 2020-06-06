@@ -10,3 +10,24 @@
     https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"
 ```
 > After typing in the URL Copy , it will gives us URL Of that minified Version of that pkg and just copy it and paste it into our code.
+
+## JSX
+
+* Most COmmunity Not Using React.createElement , instead they are using JSX 
+* JSx is HTML like syntax and Javascript
+* if We want to render JSX on DOM we will get an error like below
+  > SyntaxError: expected expression, got '<'
+  * this Actually Means That Browser Cannot JSx , Browser Only Understand JS , So we have Compile this JSx COde Into JS 
+  * We Can COnvert JSx to JS by a Tool named __babel__ 
+
+```javascript 
+// using JSx
+  const element = <div>Hello world JSx</div>
+// bable convert above jsx into something like below
+  const element = React.createElement('div',null,"Hello world JSx")
+```
+
+* first add below jsx into Html File with script tag
+```javascript
+https://unpkg.com/@babel/standalone@7.8.3/babel.js
+```
