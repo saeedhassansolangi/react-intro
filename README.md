@@ -31,3 +31,25 @@
 ```javascript
 https://unpkg.com/@babel/standalone@7.8.3/babel.js
 ```
+
+> How Jsx Works (-_-)
+
+* in head tag there is script in which we have compile version of JSx
+* and In div with a id of root in which we have JSX ;
+
+![](./my-learning/jsxtojs.png)
+
+## {} 
+* in these curly braces we can put any javascript expression and then javascript evalute this expression into value and then it gets place into that position for the React.createElement Call 
+
+> FOr Example 
+```javascript
+
+// FROM
+const children = "Hello World"
+const element = <div>{chilren} </div>
+
+//TO
+const element = <div>Hello World</div>
+
+```

@@ -1,20 +1,22 @@
-<!-- Creatint User Interface with React.createElement() ApI  -->
-
 <body>
   <div id="root">
     <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
-    <!-- react is used to react Element -->
     <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
-    <!-- reactDom is used to render the react Element on the page -->
     <script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
   </div>
   <script type="text/babel">
 
   const root = document.getElementById('root');
-  const element = <div>Hello world JSx</div>
+  // const children =  "Hello World";
+  const Hello = "Hello";
+  const World = "World"
+  const className = "container"
+  // const element = <div className={className}>{children}</div>
+  // const element = <div className={className}>{Hello} {World}</div>
+  const element = <div className={className}><span>{Hello} </span><strong>{World}</strong></div>
+
+  console.log(element);
+  
   ReactDOM.render(element,root)
-
-  // ![](./jsxtojs.png)
-
   </script>
 </body>
