@@ -1,1 +1,3 @@
 npx browser-sync start --server --files "./*.html" --no-open --no-notify --directory
+
+run above command to see change in browser and when we hit save key it will auto reload or it provides hot reloading
