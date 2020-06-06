@@ -8,15 +8,33 @@
   </div>
 
     <script type="text/javascript">
-    const root = document.getElementById('root'); 
+    // const root = document.getElementById('root'); 
 
-    // instead of creating a new Elemenet with Document instead we create it with React
-    // and instead of textContent , we speciffy/Write text in Children 
-    // and instead of 
-    const element = React.createElement('div', {children:"Hello World",className:"container"});
-    // React.createElement("typeOfElement", { children:'textContnet',className:'className'});
+    // // instead of creating a new Elemenet with Document instead we create it with React
+    // // and instead of textContent , we speciffy/Write text in Children 
+    // // and instead of 
+    // const element = React.createElement('div', {children:"Hello World",className:"container"});
+    // // React.createElement("typeOfElement", { children:'textContnet',className:'className'});
 
+    // ReactDOM.render(element,root)
+    // console.log(element);
+
+    // if we print the element we will see props that contains children and className
+//     props: {…}
+// ​​    children: "Hello World"
+// ​​    className: "container"
+// ​​
+//                               OR 
+// We can also write like below and this is exactly equivalent to the above 
+const root = document.getElementById('root'); 
+    const element = React.createElement('div', {className:"container"},"Hello World");
     ReactDOM.render(element,root)
+    console.log(element);
+   //     props: {…}
+   // children: "Hello World"
+   // className: "container
+
+
 
     // const root = document.getElementById('root');
     //   const element = document.createElement("h1");

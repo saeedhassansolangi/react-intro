@@ -1,0 +1,16 @@
+<!-- Creatint User Interface with React.createElement() ApI  -->
+<body>
+  <div id="root">
+    <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script> 
+    <!-- react is used to react Element -->
+    <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+    <!-- reactDom is used to render the react Element on the page -->
+  </div>
+
+    <script type="text/javascript">
+    const root = document.getElementById('root'); 
+    const element = React.createElement('div', {className:"container"},"Hello World From","Saeed Hassan Solangi","From Dadu");
+    ReactDOM.render(element,root)
+    console.log(element);
+
+
